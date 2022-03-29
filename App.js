@@ -1,9 +1,12 @@
 import { StatusBar } from "expo-status-bar";
-import Servicos from "./src/screens/Servicos";
-
+import Routes from "./src/Routes";
+import "intl";
+import "intl/locale-data/jsonp/pt-BR";
+import TelaPadrao from "./src/components/TelaPadrao";
 export default function App() {
   return (
-
-      <Servicos />
+    <TelaPadrao>
+      <Routes />
+    </TelaPadrao>
   );
 }
